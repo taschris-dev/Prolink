@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matthew Tieche — Prolink</title>
+  <meta name="description" content="Professional social media bio link for Matthew Tieche" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root {
+      --bg:#0f172a; --card:#111827; --text:#f8fafc;
+      --muted:#9ca3af; --brand:#3b82f6; --brand-2:#2563eb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+    .wrap{max-width:780px;margin:0 auto;padding:28px;flex:1}
+    h1{text-align:center;font-size:32px;margin:40px 0 10px}
+    p.lead{text-align:center;color:var(--muted);margin:0 0 30px;font-size:16px}
+    .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;margin-top:22px}
+    .btn{display:block;text-align:center;text-decoration:none;background:var(--brand);color:white;font-weight:700;border-radius:12px;padding:18px 20px;transition:.15s transform,.15s background;margin-bottom:12px}
+    .btn:hover{background:var(--brand-2);transform:translateY(-1px)}
+    .image-preview{
+      max-width:200px;
+      height:auto;
+      border-radius:12px;
+      margin:20px auto;
+      display:block;
+      box-shadow:0 4px 6px rgba(0,0,0,0.3);
+    }
+    footer{margin:34px 0 8px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
+    footer a{color:#cfe2ff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Matthew Tieche</h1>
+    <p class="lead">Professional Bio Link</p>
+
+    <section class="card">
+      <a href="img-page.html" aria-label="View full size TrussGuy logo">
+        <img src="IMG_7591.jpeg" alt="TrussGuy logo - Matthew Tieche" class="image-preview" />
+      </a>
+      <a class="btn" href="img-page.html">View Profile Image</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Matthew Tieche
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
