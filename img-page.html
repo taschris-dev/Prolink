@@ -35,13 +35,14 @@
   <main class="wrap">
     <h1>Matthew Tieche</h1>
     <div class="image-container">
-      <img src="IMG_7591.jpeg" alt="Matthew Tieche Profile" />
+      <img src="IMG_7591.jpeg" alt="TrussGuy logo - Matthew Tieche" />
     </div>
   </main>
 
   <footer>
-    © <script>document.write(new Date().getFullYear())</script> Matthew Tieche —
+    © <span id="year"></span> Matthew Tieche —
     <a href="index.html">Back to Home</a>
   </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

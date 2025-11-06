@@ -38,14 +38,15 @@
 
     <section class="card">
       <a href="img-page.html">
-        <img src="IMG_7591.jpeg" alt="Matthew Tieche Profile" class="image-preview" />
+        <img src="IMG_7591.jpeg" alt="TrussGuy logo - Matthew Tieche" class="image-preview" />
       </a>
       <a class="btn" href="img-page.html">View Profile Image</a>
     </section>
   </main>
 
   <footer>
-    © <script>document.write(new Date().getFullYear())</script> Matthew Tieche
+    © <span id="year"></span> Matthew Tieche
   </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
