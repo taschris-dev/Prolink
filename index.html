@@ -192,7 +192,7 @@
 
         <div class="qr-section">
             <p class="qr-text">Scan the QR code to open this page instantly on any phone</p>
-            <img src="qr-code.png" alt="QR Code to LaborLookers site" class="qr-code" id="qr-code">
+            <img alt="QR Code to LaborLookers site" class="qr-code" id="qr-code">
         </div>
 
         <div class="about">
@@ -216,7 +216,18 @@
             const qrCodeImg = document.getElementById('qr-code');
             const pageUrl = encodeURIComponent(window.location.href);
             // Using a free QR code API service
-            qrCodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${pageUrl}`;
+            const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${pageUrl}`;
+            
+            qrCodeImg.src = qrCodeUrl;
+            
+            // Add error handling for QR code loading
+            qrCodeImg.onerror = function() {
+                // If API fails, hide the QR section gracefully
+                const qrSection = document.querySelector('.qr-section');
+                if (qrSection) {
+                    qrSection.innerHTML = '<p class="qr-text" style="color: #718096;">QR code temporarily unavailable</p>';
+                }
+            };
         });
     </script>
 </body>
