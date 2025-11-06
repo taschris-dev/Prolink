@@ -5,83 +5,83 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LaborLookers — Trusses, EWP & Roofing Sales</title>
   <meta name="description" content="Fast quotes for Trusses, Engineered Wood Products, and Roofing materials. Text Matt for quick help." />
-  <meta property="og:title" content="LaborLookers — Trusses, EWP & Roofing Sales" />
-  <meta property="og:description" content="Get a fast quote for Trusses, EWP, or Roofing. Tap to text Matt." />
-  <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0f172a" />
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #f8fafc;
-      --muted: #9ca3af;
-      --brand: #3b82f6;
-      --brand-2: #2563eb;
+      --bg:#0f172a; --card:#111827; --text:#f8fafc;
+      --muted:#9ca3af; --brand:#3b82f6; --brand-2:#2563eb;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100%}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+    header{
+      background:#fff;
+      color:#0f172a;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 20px;
+      flex-wrap:wrap;
+      border-bottom:4px solid var(--brand);
+    }
+    header img{
+      height:60px;
+      max-width:220px;
+    }
+    .contact-info{
+      text-align:right;
+      font-size:14px;
+      line-height:1.5;
+    }
+    .contact-info a{
+      color:#2563eb;
+      text-decoration:none;
+      font-weight:600;
+    }
     .wrap{max-width:780px;margin:0 auto;padding:28px}
-    .hero{text-align:center;margin:6vh 0 3vh}
-    .badge{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.15);border-radius:999px;color:var(--muted);font-size:12px;margin-bottom:14px}
-    h1{margin:0 0 10px 0;font-size:28px}
-    p.lead{margin:6px 0 0 0;color:var(--muted);font-size:15px}
+    h1{text-align:center;font-size:28px;margin:20px 0 10px}
+    p.lead{text-align:center;color:var(--muted);margin:0 0 20px}
     .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px;margin-top:22px}
     .grid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
     @media(min-width:600px){.grid{grid-template-columns:1fr 1fr}}
     .btn{display:block;text-align:center;text-decoration:none;background:var(--brand);color:white;font-weight:700;border-radius:12px;padding:18px 20px;transition:.15s transform,.15s background}
     .btn:hover{background:var(--brand-2);transform:translateY(-1px)}
-    .mini{font-size:12px;color:var(--muted);margin-top:8px}
-    .contact{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;justify-content:center}
-    .contact a{color:#cfe2ff}
+    iframe.business-card{width:100%;height:480px;border:0;border-radius:12px;margin-top:16px}
     footer{margin:34px 0 8px;text-align:center;color:var(--muted);font-size:13px;line-height:1.5}
     footer a{color:#cfe2ff;text-decoration:none}
-    .sig{margin-top:14px;color:var(--muted);font-size:13px;line-height:1.6}
-    .addr{opacity:.85}
-    .line{height:1px;background:rgba(255,255,255,.08);margin:22px 0}
-    iframe.business-card {
-      width:100%;
-      height:480px;
-      border:0;
-      border-radius:12px;
-      margin-top:16px;
-    }
   </style>
 </head>
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="https://raw.githubusercontent.com/YOUR-USERNAME/laborlookers-site/main/logo.png" alt="TrussGuy Logo" />
+    <div class="contact-info">
+      <strong>Matthew Tieche</strong><br>
+      Truss Sales<br>
+      <a href="mailto:matt@trussguy.com">matt@trussguy.com</a><br>
+      <a href="tel:+17035774617">703.577.4617</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
   <main class="wrap">
-    <section class="hero">
-      <span class="badge">Sales • SC & Beyond</span>
-      <h1>Trusses, EWP & Roofing — Fast Quotes</h1>
-      <p class="lead">Tap a button to text Matt. Simple, direct, and fast response.</p>
-    </section>
+    <h1>Trusses, EWP & Roofing — Fast Quotes</h1>
+    <p class="lead">Tap a button to text Matt. Simple, direct, and fast response.</p>
 
     <section class="card">
       <div class="grid">
         <a class="btn"
-           href="sms:+17035774617?&body=Hi%20Matt%2C%20I%27m%20looking%20for%20a%20quote%20on%20Trusses%20and%2For%20Engineered%20Wood%20Products%20(LVL%2C%20PSL%2C%20I-joists%2C%20Rim%20Board).">
+           href="sms:+17035774617?&body=Hi%20Matt%2C%20I%27m%20looking%20for%20a%20quote%20on%20Trusses%20and%2For%20Engineered%20Wood%20Products.">
           Get Quote — Trusses &amp; EWP
         </a>
         <a class="btn"
-           href="sms:+17035774617?&body=Hi%20Matt%2C%20I%27m%20looking%20for%20Roofing%20materials%20(shingles%2C%20metal%2C%20underlayment%2C%20accessories).">
+           href="sms:+17035774617?&body=Hi%20Matt%2C%20I%27m%20looking%20for%20Roofing%20materials.">
           Get Quote — Roofing Materials
         </a>
       </div>
-      <div class="mini">
-        If SMS doesn’t open on desktop, <a href="tel:+17035774617">call 703-577-4617</a> or 
-        <a href="#" id="copyMsg">copy a message</a> and text manually.
-      </div>
-    </section>
-
-    <section class="card">
-      <strong>What we supply</strong>
-      <div class="mini" style="margin-top:6px;">
-        Roof &amp; Floor Trusses • Wall Panels • Posts • Beams • LVL/PSL • I-joists • SIPs • Roofing (shingles, metal, underlayment, accessories)
-      </div>
-      <div class="contact">
-        <a href="tel:+17035774617">Call</a> ·
-        <a href="sms:+17035774617">Text</a> ·
-        <a href="https://www.trussguy.com" target="_blank" rel="noopener">trussguy.com</a>
-      </div>
+      <p class="lead" style="font-size:13px;margin-top:10px;">
+        If SMS doesn’t open on desktop, call <a href="tel:+17035774617" style="color:#3b82f6;">703-577-4617</a>.
+      </p>
     </section>
 
     <section class="card">
@@ -92,32 +92,13 @@
         loading="lazy"
         allowfullscreen>
       </iframe>
-      <div class="mini">
-        Tap the card above to save Matt’s contact info or share directly.
-      </div>
     </section>
-
-    <div class="line"></div>
-
-    <footer>
-      <div class="sig">
-        <strong>Matthew J. Tieche</strong> — Truss Sales and Design<br />
-        <a href="https://www.trussguy.com" target="_blank" rel="noopener">www.trussguy.com</a> · 
-        <a href="tel:+17035774617">c: 703.577.4617</a><br />
-        <span class="addr">133 Caggiano Rd., Gaffney, SC 29341</span><br />
-        <em>Roof &amp; Floor Trusses – Wall Panels – Posts – Beams – I-joists – SIPs</em>
-      </div>
-      <div style="margin-top:10px;">© <span id="y"></span> LaborLookers</div>
-    </footer>
   </main>
 
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    document.getElementById('copyMsg')?.addEventListener('click', e => {
-      e.preventDefault();
-      const msg = "Hi Matt, I’m looking for a quote on Trusses, EWP, or Roofing materials. — (your name / project)";
-      navigator.clipboard?.writeText(msg).then(() => alert("Message copied! Paste it into your texting app."));
-    });
-  </script>
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> LaborLookers —
+    <a href="https://www.trussguy.com" target="_blank">www.trussguy.com</a>
+  </footer>
+
 </body>
 </html>
