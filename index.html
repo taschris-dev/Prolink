@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LaborLookers Quick Connect - Contact Matt for trusses, engineered wood products, and building materials">
+    <title>LaborLookers Quick Connect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #718096;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .contact-link {
+            display: block;
+            padding: 16px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+        }
+
+        .contact-link:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .contact-link.email {
+            background: #48bb78;
+            box-shadow: 0 4px 6px rgba(72, 187, 120, 0.3);
+        }
+
+        .contact-link.email:hover {
+            background: #38a169;
+            box-shadow: 0 6px 12px rgba(72, 187, 120, 0.4);
+        }
+
+        .contact-link.website {
+            background: #ed8936;
+            box-shadow: 0 4px 6px rgba(237, 137, 54, 0.3);
+        }
+
+        .contact-link.website:hover {
+            background: #dd6b20;
+            box-shadow: 0 6px 12px rgba(237, 137, 54, 0.4);
+        }
+
+        .qr-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 12px;
+        }
+
+        .qr-code {
+            max-width: 200px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border: 8px solid white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-text {
+            color: #4a5568;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .about {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .about h2 {
+            color: #2d3748;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #4a5568;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .initiative {
+            margin-top: 20px;
+            padding: 15px;
+            background: #edf2f7;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .initiative strong {
+            color: #2d3748;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .contact-link {
+                font-size: 14px;
+                padding: 14px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>LaborLookers Quick Connect</h1>
+            <p class="subtitle">
+                A fast and simple way to reach Matt for:<br>
+                Trusses, engineered wood products, and building materials<br>
+                Contractor connections and job quotes
+            </p>
+        </div>
+
+        <div class="contact-links">
+            <a href="sms:+17035774617" class="contact-link">
+                📱 Text Matt: (703) 577-4617
+            </a>
+            <a href="mailto:matt@trussguy.com" class="contact-link email">
+                📧 Email: matt@trussguy.com
+            </a>
+            <a href="https://tas-dev.github.io/laborlookers-site/" target="_blank" rel="noopener noreferrer" class="contact-link website">
+                🌐 Visit Website
+            </a>
+        </div>
+
+        <div class="qr-section">
+            <p class="qr-text">Scan the QR code to open this page instantly on any phone</p>
+            <img alt="QR Code to LaborLookers site" class="qr-code" id="qr-code">
+        </div>
+
+        <div class="about">
+            <h2>About</h2>
+            <p>
+                This project is part of <strong>Code Freedom Initiative</strong>, 
+                a veteran-led effort to simplify trades business.
+            </p>
+            <div class="initiative">
+                <p>
+                    <strong>Code Freedom Initiative</strong> helps veterans and trade professionals 
+                    connect with opportunities and streamline their business operations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate QR code using an online API
+        window.addEventListener('DOMContentLoaded', function() {
+            const qrCodeImg = document.getElementById('qr-code');
+            const pageUrl = encodeURIComponent(window.location.href);
+            // Using a free QR code API service
+            const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${pageUrl}`;
+            
+            qrCodeImg.src = qrCodeUrl;
+            
+            // Add error handling for QR code loading
+            qrCodeImg.onerror = function() {
+                // If API fails, hide the QR section gracefully
+                const qrSection = document.querySelector('.qr-section');
+                if (qrSection) {
+                    qrSection.innerHTML = '<p class="qr-text" style="color: #718096;">QR code temporarily unavailable</p>';
+                }
+            };
+        });
+    </script>
+</body>
+</html>
